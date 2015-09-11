@@ -7,4 +7,4 @@ echo `date` >>  /tmp/app.log
 echo "check watchman trigger"
 watchman trigger-list /data/services
 echo "let's read the log"
-tail -f /tmp/app.log
+tail -fn100 /tmp/app.log
